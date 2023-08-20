@@ -2,22 +2,38 @@ import json
 
 base = '''
 {
+    "npcFormID": {},
+    "npc": {},
+    "factionFemale": {},
+    "factionMale": {},
+    "npcPluginFemale": {},
+    "npcPluginMale": {},
     "raceFemale": {},
     "raceMale": {},
-    "npc": {},
     "blacklistedNpcs": [],
-    "blacklistedRaces": [
+    "blacklistedNpcsFormID": {},
+    "blacklistedNpcsPluginFemale": [],
+    "blacklistedNpcsPluginMale": [],
+    "blacklistedRacesFemale": [
         "ElderRace"
     ],
+    "blacklistedRacesMale": [
+        "ElderRace"
+    ],
+    "blacklistedOutfitsFromORefitFormID": {},
+    "blacklistedOutfitsFromORefit": [],
+    "blacklistedOutfitsFromORefitPlugin": [],
+    "outfitsForceRefitFormID": {},
+    "outfitsForceRefit": [],
     "blacklistedPresetsFromRandomDistribution": [
         "- Zeroed Sliders -",
         "-Zeroed Sliders-",
-        "Zeroed Sliders"
+        "Zeroed Sliders",
+        "HIMBO Zero for OBody"
     ],
-    "blacklistedPresetsShowInOBodyMenu": false,
-    "blacklistedOutfitsFromORefit": [],
-    "outfitsForceRefit": []
+    "blacklistedPresetsShowInOBodyMenu": true
 }
+
 '''
 
 config = json.loads(base)
